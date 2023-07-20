@@ -1,5 +1,5 @@
 import './App.css';
-/* import { Greet } from './components/Greet';
+import { Greet } from './components/Greet';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
@@ -7,11 +7,11 @@ import { Heading } from './components/Heading';
 import { Oscar } from './components/Oscar';
 import { Button } from './components/Button';
 import { Input } from './components/Input';
-import { Container } from './components/Container'; */
+import { Container } from './components/Container';
 import { LoggedIn } from './components/LoggedIn';
 
 function App() {
-	/* const personName = {
+	const personName = {
 		first: 'Bruce',
 		last: 'Wayne',
 	};
@@ -28,11 +28,11 @@ function App() {
 			first: 'Barry',
 			last: 'Allen',
 		},
-	]; */
+	];
 
 	return (
 		<div className='App'>
-			{/* <Greet
+			<Greet
 				name='Harsh'
 				// messageCount={20}
 				isLoggedIn={true}
@@ -55,7 +55,7 @@ function App() {
 				value=''
 				handleChange={e => console.log(e)}
 			/>
-			<Container styles={{ border: '1px solid black', padding: '1rem' }} /> */}
+			<Container styles={{ border: '1px solid black', padding: '1rem' }} />
 
 			<LoggedIn />
 		</div>
