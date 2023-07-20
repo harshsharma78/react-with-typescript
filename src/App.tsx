@@ -1,26 +1,65 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+/* import { Greet } from './components/Greet';
+import { Person } from './components/Person';
+import { PersonList } from './components/PersonList';
+import { Status } from './components/Status';
+import { Heading } from './components/Heading';
+import { Oscar } from './components/Oscar';
+import { Button } from './components/Button';
+import { Input } from './components/Input';
+import { Container } from './components/Container'; */
+import { LoggedIn } from './components/LoggedIn';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	/* const personName = {
+		first: 'Bruce',
+		last: 'Wayne',
+	};
+	const nameList = [
+		{
+			first: 'Bruce',
+			last: 'Wayne',
+		},
+		{
+			first: 'Clark',
+			last: 'Kent',
+		},
+		{
+			first: 'Barry',
+			last: 'Allen',
+		},
+	]; */
+
+	return (
+		<div className='App'>
+			{/* <Greet
+				name='Harsh'
+				// messageCount={20}
+				isLoggedIn={true}
+			/>
+			<Person name={personName} />
+			<PersonList names={nameList} />
+
+			<Status status='Loading' />
+			<Heading>Children Prop Example</Heading>
+			<Oscar>
+				<Heading>Oscar goes to Robert Downey Jr.!</Heading>
+			</Oscar>
+
+			<Button
+				handleClick={(e, id) => {
+					console.log('Button Clicked', e, id);
+				}}
+			/>
+			<Input
+				value=''
+				handleChange={e => console.log(e)}
+			/>
+			<Container styles={{ border: '1px solid black', padding: '1rem' }} /> */}
+
+			<LoggedIn />
+		</div>
+	);
 }
 
 export default App;
