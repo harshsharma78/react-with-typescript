@@ -21,8 +21,10 @@ import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
 import { List } from './components/generics/List';
 import { RandomNumber } from './components/restrictions/RandomNumber';
-import { LoggedIn } from './components/LoggedIn'; */
 import { Toast } from './components/templateLiterals/Toast';
+import { LoggedIn } from './components/LoggedIn'; */
+import { Button } from './components/html/Button';
+import { Input } from './components/html/Input';
 
 function App() {
 	/* const personName = {
@@ -50,45 +52,32 @@ function App() {
 				// messageCount={20}
 				isLoggedIn={true}
 			/>
-
 			<Person name={personName} />
 			<PersonList names={nameList} />
-
 			<Status status='Loading' />
-
 			<Heading>Children Prop Example</Heading>
-
 			<Oscar>
 				<Heading>Oscar goes to Robert Downey Jr.!</Heading>
 			</Oscar>
-
 			<Button
 				handleClick={(e, id) => {
 					console.log('Button Clicked', e, id);
 				}}
 			/>
-
 			<Input
 				value=''
 				handleChange={e => console.log(e)}
 			/>
-
 			<Container styles={{ border: '1px solid black', padding: '1rem' }} />
-
 			<LoggedIn />
-
 			<Counter />
-
 			<ThemeContextProvider>
 				<Box/>
 			</ThemeContextProvider>
-
 			<UserContextProvider>
 				<User />
 			</UserContextProvider>
-
 			<DomRef />
-
 			<MutableRef />
 			<Private
 				isLoggedIn={true}
@@ -102,8 +91,14 @@ function App() {
 				value={10}
 				isPositive
 			/>
-			*/}
 			<Toast position='left-bottom' />
+			*/}
+			<Button
+				variant='primary'
+				onClick={() => console.log('Clicked')}>
+				HTML Button
+			</Button>
+			<Input />
 		</div>
 	);
 }
