@@ -22,9 +22,11 @@ import { Profile } from './components/auth/Profile';
 import { List } from './components/generics/List';
 import { RandomNumber } from './components/restrictions/RandomNumber';
 import { Toast } from './components/templateLiterals/Toast';
-import { LoggedIn } from './components/LoggedIn'; */
 import { Button } from './components/html/Button';
 import { Input } from './components/html/Input';
+import { CustomComponent } from './components/html/CustomComponent';
+import { LoggedIn } from './components/LoggedIn'; */
+import { Test } from './components/polymorphic/Test';
 
 function App() {
 	/* const personName = {
@@ -92,13 +94,35 @@ function App() {
 				isPositive
 			/>
 			<Toast position='left-bottom' />
-			*/}
 			<Button
 				variant='primary'
 				onClick={() => console.log('Clicked')}>
 				HTML Button
 			</Button>
 			<Input />
+			<CustomComponent
+				name='Harsh'
+				messageCount={10}
+				isLoggedIn
+			/>
+		*/}
+			<Test
+				as='h1'
+				size='lg'>
+				Heading
+			</Test>
+			<Test
+				as='p'
+				size='md'>
+				Paragraph
+			</Test>
+			<Test
+				as='label'
+				htmlFor='Id'
+				size='sm'
+				color='secondary'>
+				Label
+			</Test>
 		</div>
 	);
 }
