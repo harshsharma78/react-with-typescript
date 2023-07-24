@@ -19,8 +19,10 @@ import { DomRef } from './components/ref/DomRef';
 import { MutableRef } from './components/ref/MutableRef';
 import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
-import { LoggedIn } from './components/LoggedIn'; */
 import { List } from './components/generics/List';
+import { RandomNumber } from './components/restrictions/RandomNumber';
+import { LoggedIn } from './components/LoggedIn'; */
+import { Toast } from './components/templateLiterals/Toast';
 
 function App() {
 	/* const personName = {
@@ -92,11 +94,16 @@ function App() {
 				isLoggedIn={true}
 				component={Profile}
 			/>
-			*/}
 			<List
 				items={['Batman', 'Superman', 'Flash']}
 				onClick={item => console.log(item)}
 			/>
+			<RandomNumber
+				value={10}
+				isPositive
+			/>
+			*/}
+			<Toast position='left-bottom' />
 		</div>
 	);
 }
